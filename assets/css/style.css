@@ -1,0 +1,171 @@
+                /* PREDEFINE */
+
+html {
+    position : relative;
+}
+
+body {
+    margin-bottom: 105px;
+}
+
+hr { 
+    width : 250px;
+    border-top: 3px solid #666
+}
+.container-fluid {
+    padding: 7px 5%;
+}
+
+                /* NAVBAR */
+
+nav {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.5rem;
+}
+
+#iamf.navbar-brand {
+    color:#fff;
+    font-size: 2.5rem;
+}
+
+.navbar-inverse {
+    border: transparent;
+    box-shadow: 0px 0.5px 2px rgba(0,0,0, 0.8);
+    opacity: 0.97;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: rgb(233, 233, 233);
+}
+
+                /* JUMBOTRON */
+
+h1.name-heading {
+    font-size: 4.5rem;
+}
+
+.jumbotron { 
+    background-image: url(../img/cover.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0.5px 7px rgba(27, 27, 27, 0.5); 
+    color:#faeded;
+    overflow: hidden;
+    margin-bottom : 0px;
+}
+
+.jumbotron img {
+    width: 21%;
+    box-shadow: 1px 1px 2px rgba(0,0,0, 0.8);
+    transition: 1s;
+    opacity : 1;
+    margin-top: 35px;
+}
+
+.jumbotron img.hilang {
+    opacity : 0;
+}
+
+.jumbotron h1, .jumbotron p {
+    text-shadow: 1px 1px 2px rgba(0,0,0, 0.8);
+    opacity : 1;
+    transition: 1s;
+}
+
+.jumbotron h1.hilang, .jumbotron p.hilang{
+    opacity : 0;
+}
+
+section {
+    min-height: 400px;
+    padding-bottom: 4px;
+}
+
+                /* ABOUT */
+
+#about {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Di ganti css keyframes
+.p-kiri, .p-kanan {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1s;
+}
+
+.p-kanan {
+    transform: translate(50px, 0);
+}
+
+.p-kiri.p-muncul, .p-kanan.p-muncul{
+    opacity: 1;   
+    transform: translate(0,0);
+} 
+*/
+
+                /* PORTOFOLIO */
+
+#portofolio {
+    background-color: #000013;
+    color: #fff;
+}
+
+.portofolio.thumbnail{
+    background-color: #fff;
+    box-shadow:  inset 2px 5px 10px rgba(0, 0, 0, 0.705);
+
+}
+
+.portofolio .thumbnail {
+    opacity: 0;
+    transition : 1s;
+}
+
+.portofolio .thumbnail.muncul{ 
+    opacity: 1;
+}
+
+                /* CONTACT */
+
+#contact {
+    min-height: 500px;
+    /* box-shadow:  0px -1px 10px rgba(0,0,0, 0.8) */
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.btn-send{
+    margin-top: 20px;
+}
+
+.btn-send:hover {
+    color: #fff;
+    background-color: #23272b;
+    border-color: #1d2124;
+}
+
+                /* FOOTER */
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom : 0px;
+    padding: 20px 0;    
+    background-color: #000013;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p, .icon-footer, .icon-footer a {
+    color: #fff;
+}

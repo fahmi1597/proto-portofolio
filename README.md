@@ -12,9 +12,3 @@ Lingkup Materi
 - Javascript / jQuery :
     - Smooth Scrolling
     - Parallax Effect 
-
-
-# Proto-Portofolio
-Prototype-portofolio
-Host test
-

@@ -29,7 +29,7 @@
   .fadeInLeft {
     -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
   }
 
   @-webkit-keyframes fadeInRight {
@@ -63,5 +63,5 @@
   .fadeInRight {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
   }

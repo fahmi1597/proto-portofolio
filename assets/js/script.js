@@ -8,67 +8,55 @@ $(".page-scroll").on('click', function (event) {
 
         // Store hash
         var hash = this.hash;
+        console.log("hash : ", $(hash).offset().top)
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
-            scrollTop: $(hash).offset().top - 50
-        }, 900, 'easeInOutExpo');
+            scrollTop: $(hash).offset().top - 63
+        }, 800, 'easeInOutExpo');
     } // End if
 
 });
-// Animate paragraph within about section on first load.
-// $(window).on('load', function () {
-//     $('.p-kiri').addClass('p-muncul');
-//     $('.p-kanan').addClass('p-muncul');
-// });
 
 $(window).scroll(function () {
     var wScroll = $(this).scrollTop();
-    //console.log(wScroll);
-
+    
     /* Section header */
+    if ( 768 > $(window).width() ){
     $('.jumbotron img').css({
-        'transform': 'translate(0px, ' + wScroll / 8 + '%)',
+        'transform': 'translate(0px, ' + wScroll / 2.1 + '%)'
     });
     $('.jumbotron h1').css({
-        'transform': 'translate(0px, ' + wScroll / 2 + '%)'
+        'transform': 'translate(0px, ' + wScroll / 0.6 + '%)'
     });
 
-    $('.jumbotron p').css({
-        'transform': 'translate(0px, ' + wScroll / 1.2 + '%)'
+    $('.jumbotron .p-wrapper').css({
+        'transform': 'translate(0px, ' + wScroll / 0.4 + '%)'
     });
-
+    } else {
+        $('.jumbotron img').css({
+            'transform': 'translate(0px, ' + wScroll / 8 + '%)',
+        });
+        $('.jumbotron h1').css({
+            'transform': 'translate(0px, ' + wScroll / 1.4 + '%)'
+        });
+    
+        $('.jumbotron .p-wrapper').css({
+            'transform': 'translate(0px, ' + wScroll / 1.2 + '%)'
+        });
+    }
     // Parallax Effect
-    if (wScroll > $('.jumbotron').offset().top + 250) {
+    if (wScroll > $('.jumbotron').offset().top + 240) {
         $('.jumbotron img').addClass('hilang');
         $('.jumbotron h1').addClass('hilang');
-        $('.jumbotron p').addClass('hilang');
-
+        $('.jumbotron .p-wrapper').addClass('hilang');
     }
     else {
         $('.jumbotron img').removeClass('hilang');
         $('.jumbotron h1').removeClass('hilang');
-        $('.jumbotron p').removeClass('hilang');
+        $('.jumbotron .p-wrapper').removeClass('hilang');
     }
     /* End of Section header */
-
-    /* Section about */
-    // Bad calculation
-    // if ((wScroll > $('.p-kiri').offset().top + 50)) {
-    //     $('.pKiri').removeClass('pMuncul');
-    //     $('.p-kanan').removeClass('pMuncul');
-    // }
-    // else if (wScroll == 0) {
-    //     $('.pkiri').removeClass('pmuncul');
-    //     $('.pkanan').removeClass('pmuncul');
-    // }
-    // else {
-    //     $('.pkiri').addClass('pmuncul');
-    //     $('.pkanan').addClass('pmuncul');
-    //     //$('.pkanan.pmuncul .pkiri.pmuncul').css({'transition': 2+'s'});
-    // }
-
-    /* End of Section about */
 
     /* Section portofolio */
 

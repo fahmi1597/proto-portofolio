@@ -1,171 +1,231 @@
-                /* PREDEFINE */
+/*------------- PREDEFINE */
 
 html {
-    position : relative;
+  position: relative;
 }
 
 body {
-    margin-bottom: 105px;
+  margin-bottom: 105px;
 }
 
-hr { 
-    width : 250px;
-    border-top: 3px solid #666
+hr {
+  width: 250px;
+  border-top: 3px solid #666;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+section h2 {
+    letter-spacing: 0.06em;
+    font-family: 'Poppins', sans-serif;
+}
+
 .container-fluid {
     padding: 7px 5%;
 }
+  
 
-                /* NAVBAR */
 
-nav {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 1.5rem;
+/*------------- NAVBAR */
+.navbar-inverse {
+  border: transparent;
+  box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.7);
+  opacity: 0.97;
 }
 
 #iamf.navbar-brand {
-    color:#fff;
-    font-size: 2.5rem;
+  color: #fff;
+  font-size: 2.5rem;
 }
 
-.navbar-inverse {
-    border: transparent;
-    box-shadow: 0px 0.5px 2px rgba(0,0,0, 0.8);
-    opacity: 0.97;
+.nav > li > a {
+  font-size: 1.65rem;
+  color: rgb(229, 229, 229);
 }
 
-.navbar-inverse .navbar-nav>li>a {
-    color: rgb(233, 233, 233);
+/*------------- JUMBOTRON */
+
+.jumbotron {
+  background-image: url(../img/cover.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0px 0.5px 7px rgba(27, 27, 27, 0.5);
+  color: #fff;
+  overflow: hidden;
+  margin-bottom: 0px;
 }
 
-                /* JUMBOTRON */
-
-h1.name-heading {
-    font-size: 4.5rem;
+.jumbotron .title-heading {
+  font-size: 4.5rem;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.08rem;
 }
 
-.jumbotron { 
-    background-image: url(../img/cover.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    box-shadow: inset 0px 0.5px 7px rgba(27, 27, 27, 0.5); 
-    color:#faeded;
-    overflow: hidden;
-    margin-bottom : 0px;
+.jumbotron .sub-heading {
+    font-size: 2rem;
+    letter-spacing: 0.07rem;
+}
+
+.title-heading > hr {
+  width: 250px;
+  border-top: 3px solid #fff;
+  margin-top: 7px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.p-wrapper {
+  background-color: #000000cf;
+  height: 40px;
+  display: inline-block;
+  border-radius: 7px;
+  padding: 5px 15px;
+}
+
+p.sub-heading {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0;    
+    font-weight: lighter;
+}
+
+.title-heading,
+.sub-heading,
+.p-wrapper {
+  opacity: 1;
+  transition: 1.5s;
 }
 
 .jumbotron img {
-    width: 21%;
-    box-shadow: 1px 1px 2px rgba(0,0,0, 0.8);
-    transition: 1s;
-    opacity : 1;
-    margin-top: 35px;
+  width: 21%;
+  transition: 1s;
+  opacity: 1;
+  margin-top: 4%;
 }
 
-.jumbotron img.hilang {
-    opacity : 0;
-}
-
-.jumbotron h1, .jumbotron p {
-    text-shadow: 1px 1px 2px rgba(0,0,0, 0.8);
-    opacity : 1;
-    transition: 1s;
-}
-
-.jumbotron h1.hilang, .jumbotron p.hilang{
-    opacity : 0;
+.jumbotron img.hilang,
+.jumbotron h1.hilang,
+.jumbotron .p-wrapper.hilang {
+  opacity: 0;
 }
 
 section {
-    min-height: 400px;
-    padding-bottom: 4px;
+  min-height: 400px;
+  padding-bottom: 4px;
 }
 
-                /* ABOUT */
+/* ABOUT */
 
-#about {
-    max-width: 100%;
-    overflow: hidden;
+.about {
+  max-width: 100%;
+  overflow: hidden;
 }
 
-/* Di ganti css keyframes
-.p-kiri, .p-kanan {
-    opacity: 0;
-    transform: translate(-50px, 0);
-    transition: 1s;
+/* PORTOFOLIO */
+
+.portofolio {
+  background-color: #000013;
+  color: #fff;
 }
 
-.p-kanan {
-    transform: translate(50px, 0);
-}
-
-.p-kiri.p-muncul, .p-kanan.p-muncul{
-    opacity: 1;   
-    transform: translate(0,0);
-} 
-*/
-
-                /* PORTOFOLIO */
-
-#portofolio {
-    background-color: #000013;
-    color: #fff;
-}
-
-.portofolio.thumbnail{
-    background-color: #fff;
-    box-shadow:  inset 2px 5px 10px rgba(0, 0, 0, 0.705);
-
+.portofolio.thumbnail {
+  background-color: #fff;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.705);
 }
 
 .portofolio .thumbnail {
-    opacity: 0;
-    transition : 1s;
+  opacity: 0;
+  transition: 1s;
 }
 
-.portofolio .thumbnail.muncul{ 
-    opacity: 1;
+.portofolio .thumbnail.muncul {
+  opacity: 1;
 }
 
-                /* CONTACT */
+/* CONTACT */
 
-#contact {
-    min-height: 500px;
-    /* box-shadow:  0px -1px 10px rgba(0,0,0, 0.8) */
+.contact {
+  min-height: 500px;
 }
 
 .btn-dark {
-    color: #fff;
-    background-color: #343a40;
-    border-color: #343a40;
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
 }
 
-.btn-send{
-    margin-top: 20px;
+.btn-send {
+  margin-top: 20px;
 }
 
 .btn-send:hover {
-    color: #fff;
-    background-color: #23272b;
-    border-color: #1d2124;
+  color: #fff;
+  background-color: #23272b;
+  border-color: #1d2124;
 }
 
-                /* FOOTER */
+/* FOOTER */
 
 footer {
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    bottom : 0px;
-    padding: 20px 0;    
-    background-color: #000013;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0px;
+  padding: 20px 0;
+  background-color: #000013;
 }
 
 footer a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-footer p, .icon-footer, .icon-footer a {
-    color: #fff;
+footer p,
+.icon-footer,
+.icon-footer a {
+  color: #fff;
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .jumbotron .title-heading {
+    font-size: 2.65rem;
+  }
+  .jumbotron .sub-heading {
+    font-size: 1.4rem;  
+  }
+  .jumbotron img {
+    width: 20%;
+    margin-top: 15%;
+  }
+  .p-wrapper {
+    height: 20px;
+    display: inline-table;
+    padding: 4px 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+  } 
+  .title-heading > hr {
+    width: 125px;
+    border-top: 3px solid #fff;
+    margin-top: 7px;
+    border-radius: 10px;
+  }
+  /* .jumbotron h1, .jumbotron p {
+        text-shadow: 1px 1px 1px rgba(0,0,0, 0.8);
+        opacity: 1;
+        transition: 0.5s;
+        
+    }
+
+    .jumbotron img.hilang, .jumbotron h1.hilang, .jumbotron p.hilang {
+        opacity : 0;
+    } */
+}
+

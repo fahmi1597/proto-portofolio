@@ -5,6 +5,7 @@ html {
 }
 
 body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
   margin-bottom: 105px;
 }
 
@@ -13,22 +14,28 @@ hr {
   border-top: 3px solid #666;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  letter-spacing: 0.05rem;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-section h2 {
-    letter-spacing: 0.06em;
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;  
 }
 
 .container-fluid {
     padding: 7px 5%;
+    
 }
   
 
@@ -63,27 +70,24 @@ section h2 {
   margin-bottom: 0px;
 }
 
-.jumbotron .title-heading {
+.jumbotron h1.title-heading {
   font-size: 4.5rem;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.03rem;
 }
 
 .jumbotron .sub-heading {
     font-size: 2rem;
-    letter-spacing: 0.07rem;
 }
 
 .title-heading > hr {
-  width: 250px;
-  border-top: 3px solid #fff;
-  margin-top: 7px;
-  border-radius: 10px;
-  transition: 1s;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.875), rgba(0, 0, 0, 0));
 }
 
 .p-wrapper {
-  background-color: #000000cf;
+  background-color: #000000bc;
   height: 40px;
   display: inline-block;
   border-radius: 7px;
@@ -217,15 +221,5 @@ footer p,
     margin-top: 7px;
     border-radius: 10px;
   }
-  /* .jumbotron h1, .jumbotron p {
-        text-shadow: 1px 1px 1px rgba(0,0,0, 0.8);
-        opacity: 1;
-        transition: 0.5s;
-        
-    }
-
-    .jumbotron img.hilang, .jumbotron h1.hilang, .jumbotron p.hilang {
-        opacity : 0;
-    } */
 }
 

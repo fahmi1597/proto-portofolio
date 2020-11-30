@@ -1,24 +1,33 @@
-# Seri NGOBAR dari Web Programming UNPAS : Membuat Website dengan CSS Framework
+# NGOBAR: NGoding BAReng
 
-Live Site :  
-<https://fahmi1597.github.io/proto-portofolio/>
+## About
 
-*Modifikasi dari WPU
-  
-Link :  
-<https://www.youtube.com/playlist?list=PLFIM0718LjIVWpIhlNA_sU-4ZWvN4uSmb>
+Seri [NGOBAR Membuat Website dengan CSS Framework](https://www.youtube.com/playlist?list=PLFIM0718LjIVWpIhlNA_sU-4ZWvN4uSmb)
+ dari Pak Sandhika Galih di Channel Youtube Web Programming UNPAS.
 
 ## Goal
 
 - Membuat Website Portofolio dengan Bootstrap
 
-## Materi
+## Skills Required
 
-Lingkup Materi:  
+- Dasar HTML5 | CSS | JavaScript
 
-- Penggunaan Framework Bootstrap 3
+## Skills Learned
+
+- BootStrap 3
+  - [x] Grid System
 - CSS
-  - CSS animation
-- Javascript / jQuery
-  - Smooth Scrolling
-  - Parallax Effect
+  - [x] CSS Animation
+- Javascript, jQuery
+  - [x] Smooth Scrolling
+  - [x] Parallax Effect
+
+
+## Demo
+
+Sudah di modifikasi:  
+<https://fahmi1597.github.io/proto-portofolio/>
+
+
+

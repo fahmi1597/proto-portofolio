@@ -3,7 +3,7 @@
 ## About
 
 Seri [NGOBAR Membuat Website dengan CSS Framework](https://www.youtube.com/playlist?list=PLFIM0718LjIVWpIhlNA_sU-4ZWvN4uSmb)
- dari Pak Sandhika Galih di Channel Youtube Web Programming UNPAS.
+ oleh Pak Sandhika Galih di Channel Youtube Web Programming UNPAS.
 
 ## Goal
 

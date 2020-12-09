@@ -19,34 +19,36 @@ $(".page-scroll").on('click', function (event) {
 });
 
 $(window).scroll(function () {
-    var wScroll = $(this).scrollTop();
+    var wScroll = $(this).scrollTop() + 50;
     
-    /* Section header */
-    if ( 768 > $(window).width() ){
+    /* Section Header */
+    if (  $(window).width() >= 768 ){
     $('.jumbotron img').css({
-        'transform': 'translate(0px, ' + wScroll / 2.1 + '%)'
+        'transform': 'translate(0px, ' + wScroll / 6 + '%)',
     });
     $('.jumbotron h1').css({
-        'transform': 'translate(0px, ' + wScroll / 0.6 + '%)'
+        'transform': 'translate(0px, ' + wScroll / 2 + '%)'
     });
 
     $('.jumbotron .p-wrapper').css({
-        'transform': 'translate(0px, ' + wScroll / 0.4 + '%)'
+        'transform': 'translate(0px, ' + wScroll / 1.2 + '%)'
     });
-    } else {
-        $('.jumbotron img').css({
-            'transform': 'translate(0px, ' + wScroll / 8 + '%)',
-        });
-        $('.jumbotron h1').css({
-            'transform': 'translate(0px, ' + wScroll / 1.4 + '%)'
-        });
+    } 
+    // else {
+    //     $('.jumbotron img').css({
+    //         'transform': 'translate(0px, ' + wScroll / 2.1 + '%)'
+    //     });
+    //     $('.jumbotron h1').css({
+    //         'transform': 'translate(0px, ' + wScroll / 0.6 + '%)'
+    //     });
     
-        $('.jumbotron .p-wrapper').css({
-            'transform': 'translate(0px, ' + wScroll / 1.2 + '%)'
-        });
-    }
+    //     $('.jumbotron .p-wrapper').css({
+    //         'transform': 'translate(0px, ' + wScroll / 0.4 + '%)'
+    
+    //     });
+    // }
     // Parallax Effect
-    if (wScroll > $('.jumbotron').offset().top + 240) {
+    if (wScroll > $('.jumbotron').offset().top + 250) {
         $('.jumbotron img').addClass('hilang');
         $('.jumbotron h1').addClass('hilang');
         $('.jumbotron .p-wrapper').addClass('hilang');
@@ -56,11 +58,12 @@ $(window).scroll(function () {
         $('.jumbotron h1').removeClass('hilang');
         $('.jumbotron .p-wrapper').removeClass('hilang');
     }
-    /* End of Section header */
+    
+    /* Section About */
+    
+    /* Section Portofolio */
 
-    /* Section portofolio */
-
-    if (wScroll > $('.portofolio').offset().top - 300) {
+    if (wScroll > $('.portofolio').offset().top - 350) {
         $('.portofolio .thumbnail').each(function (i) {
             setTimeout(function () {
                 $('.portofolio .thumbnail').eq(i).addClass('muncul');
@@ -68,5 +71,4 @@ $(window).scroll(function () {
         });
     }
 
-    /* End of Section about */
 });
